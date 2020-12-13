@@ -1,0 +1,23 @@
+START
+
+INITIALISE sum=0
+
+OUTPUT "Enter a number"
+INPUT n
+
+temp=n
+
+WHILE  n IS NOT 0
+             r = n MOD 10
+             n = n/10
+             sum = sum+(r*r*r)
+END WHILE
+
+IF sum=temp
+             OUTPUT "Armstrong"
+
+ELSE 
+             OUTPUT "Not armstrong"
+END IF 
+
+END
